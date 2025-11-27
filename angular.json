@@ -23,12 +23,7 @@
             ],
             "styles": [
               "src/styles.css"
-            ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            ]
           },
           "configurations": {
             "production": {
@@ -53,8 +48,8 @@
             },
             "gh-pages": {
               "outputPath": "docs",
-              "baseHref": "/cv-personal/",
-              "outputMode": "static",
+              "baseHref": "/cvweb/",
+              "outputMode": "browser",
               "budgets": [
                 {
                   "type": "initial",
