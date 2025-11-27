@@ -13,6 +13,7 @@ export class App {
   telefono2 = '949171788';
   correo = 'josebenitesmacelo21@gmail.com';
   pais = 'Lima, Los Olivos, Perú';
+  fotoPerfil = ''; // Agrega aquí la ruta de tu foto más tarde (ej: 'assets/foto.jpg')
   
   habilidadesPersonales = ['Comunicativo', 'Responsable', 'Proactivo'];
   habilidadesIA = ['Habilidades con la IA'];
