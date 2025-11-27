@@ -14,55 +14,31 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
+            "index": "src/index.html",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "/"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ]
+            "styles": ["src/styles.css"],
+            "scripts": [],
+            "ssr": false,
+            "appShell": false,
+            "outputPath": "docs",
+            "baseHref": "./"
           },
           "configurations": {
             "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "20kB",
-                  "maximumError": "30kB"
-                }
-              ],
-              "outputHashing": "all"
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false
             },
             "development": {
               "optimization": false,
-              "extractLicenses": false,
               "sourceMap": true
-            },
-            "gh-pages": {
-              "outputPath": "docs",
-              "baseHref": "/cvweb/",
-              "outputMode": "browser",
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "100kB",
-                  "maximumError": "100kB"
-                }
-              ],
-              "outputHashing": "all"
             }
           },
           "defaultConfiguration": "production"
@@ -79,25 +55,6 @@
             "development": {
               "buildTarget": "cv_personal:build:development"
             }
-          },
-          "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "builder": "@angular/build:extract-i18n"
-        },
-        "test": {
-          "builder": "@angular/build:karma",
-          "options": {
-            "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
-            "styles": [
-              "src/styles.css"
-            ]
           }
         }
       }
