@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:gh-pages": "ng build --configuration gh-pages",
+    "build:gh-pages": "ng build --output-path docs --base-href /cvweb/ && node move-files.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:cv_personal": "node dist/cv_personal/server/server.mjs"
