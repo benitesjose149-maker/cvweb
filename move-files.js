@@ -27,10 +27,13 @@ if (fs.existsSync(browserPath)) {
   const indexPath = path.join(docsPath, 'index.html');
   if (fs.existsSync(indexPath)) {
     let indexContent = fs.readFileSync(indexPath, 'utf8');
-    // Ensure base href is correct for GitHub Pages
-    indexContent = indexContent.replace(/<base href="[^"]*">/, '<base href="/cvweb/">');
+    // Use relative path for GitHub Pages
+    indexContent = indexContent.replace(/<base href="[^"]*">/, '<base href="./">');
+    // Fix script and style paths to be relative
+    indexContent = indexContent.replace(/href="([^"]*\.css)"/g, 'href="./$1"');
+    indexContent = indexContent.replace(/src="([^"]*\.js)"/g, 'src="./$1"');
     fs.writeFileSync(indexPath, indexContent);
-    console.log('✓ Updated index.html base href');
+    console.log('✓ Updated index.html base href and paths');
   }
   
   console.log('✅ Files moved successfully!');
