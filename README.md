@@ -1,59 +1,78 @@
-# CvPersonal
+# CV Virtual - Jose Benites Marcelo
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
+CV virtual personal desarrollado con Angular, diseñado para mostrar mis habilidades, experiencia y formación académica de manera profesional y moderna.
 
-## Development server
+## 🚀 Características
 
-To start a local development server, run:
+- **Diseño Moderno**: Interfaz oscura con animaciones suaves
+- **Responsive**: Adaptable a todos los dispositivos (móvil, tablet, desktop)
+- **Animaciones**: Efectos de entrada y scroll reveal para una experiencia interactiva
+- **Contacto Directo**: Botones flotantes para WhatsApp y correo electrónico
 
+## 🛠️ Tecnologías Utilizadas
+
+- Angular 20
+- TypeScript
+- HTML5 / CSS3
+- Server-Side Rendering (SSR)
+
+## 📋 Contenido del CV
+
+- **Perfil Profesional**: Descripción de experiencia y habilidades
+- **Experiencia Laboral**: Trabajo actual en HWPeru
+- **Formación Académica**: Estudios en Cibertec
+- **Habilidades Personales**: Comunicativo, Responsable, Proactivo
+- **Tecnologías**: Angular, React, SQL Server, Python, JavaScript, C#, n8n, APIs
+- **Idiomas**: Español (Nativo), Inglés (Básico)
+
+## 🚀 Instalación y Uso
+
+### Prerrequisitos
+
+- Node.js (versión 18 o superior)
+- npm o yarn
+
+### Pasos para ejecutar
+
+1. Clonar el repositorio:
 ```bash
-ng serve
+git clone https://github.com/tu-usuario/cv-personal.git
+cd cv-personal
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+2. Instalar dependencias:
 ```bash
-ng generate component component-name
+npm install
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+3. Ejecutar el servidor de desarrollo:
 ```bash
-ng generate --help
+npm start
 ```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
+4. Abrir en el navegador:
+```
+http://localhost:7001
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📦 Build para Producción
 
 ```bash
-ng test
+npm run build
 ```
 
-## Running end-to-end tests
+Los archivos compilados se generarán en la carpeta `dist/`.
 
-For end-to-end (e2e) testing, run:
+## 📧 Contacto
 
-```bash
-ng e2e
-```
+- **Email**: josebenitesmacelo21@gmail.com
+- **Teléfono**: 984256122 / 949171788
+- **Ubicación**: Lima, Los Olivos, Perú
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 📄 Licencia
 
-## Additional Resources
+Este proyecto es de uso personal.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+Desarrollado con ❤️ por Jose Benites Marcelo
